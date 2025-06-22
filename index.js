@@ -59,7 +59,7 @@ app.use(express.json());
 app.use(
   cors({
     // origin: "http://localhost:5173"  ,
-    origin: "https://sb1d2sqww-i3ef--5173--10996a95.local-credentialless.webcontainer.io",
+    origin: "https://ephemeral-banoffee-2f15ad.netlify.app",
     credentials: true,
   })
 );
