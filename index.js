@@ -324,7 +324,8 @@ app.use(errorResponder);
 
 
 const port = process.env.PORT || 4444;
-app.listen(port, '127.0.0.1', (err) => {
+const host = process.env.HOST || '0.0.0.0';
+app.listen(port, host, (err) => {
   if (err) {
     logger.error('Failed to start server:', err);
     return console.log(err);
